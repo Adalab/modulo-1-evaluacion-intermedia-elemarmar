@@ -62,7 +62,7 @@ main {
     height: 100vh;
 }
 
-section {
+.main-section {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ section {
     background-color: var(--primary-color);
 }
 
-section h1 {
+.heading {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -78,7 +78,7 @@ section h1 {
     color: var(--light-color);
 }
 
-h1 span {
+.heading span {
     display: block;
     padding: 5px 0;
 }
@@ -98,7 +98,7 @@ h1 span {
     }
 
     /* Main */
-    section h1 {
+    .heading {
         font-size: 40px;
     }
 }
