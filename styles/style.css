@@ -76,11 +76,11 @@ main {
     text-align: center;
     text-transform: capitalize;
     color: var(--light-color);
+    line-height: 1.4;
 }
 
 .heading span {
     display: block;
-    padding: 5px 0;
 }
 
 
