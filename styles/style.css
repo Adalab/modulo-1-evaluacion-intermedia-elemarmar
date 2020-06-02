@@ -1,0 +1,99 @@
+:root {
+    /* Colors */
+    --primary-color: #3CDBC0;
+    --dark-color: #4a4a4a;
+    --light-color: #FFFFFF;
+
+    /* Fonts */
+    --primary-font: 'Rubik', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 13px;
+    background-color: var(--light-color);
+}
+
+.logo-container {
+    width: 155px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.nav-menu li {
+    padding-top: 10px;
+    color: var(--dark-color);
+}
+
+.nav-menu li:last-child {
+    /* avoid having margin on the left for both items */
+    margin-left: 20px;
+}
+
+/* Main section */
+main {
+    height: 100vh;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+section h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--light-color);
+}
+
+h1 span {
+    display: block;
+    padding: 5px 0;
+}
+
+
+/* Tablet and Desktop version */
+@media all and (min-width:768px) {
+    /* Header */
+    .header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+
+    .nav-menu li {
+        padding-top: 0;
+    }
+
+    /* Main */
+    section h1 {
+        font-size: 40px;
+    }
+}
