@@ -54,12 +54,8 @@ a {
 }
 
 /* Main section */
-main {
-    height: 100vh;
-}
-
 .main-section {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +71,7 @@ main {
     line-height: 1.4;
 }
 
-.heading span {
+.heading .heading-breakline {
     display: block;
 }
 
